@@ -18,5 +18,9 @@ logger.log({level:'info', message:'info', stack:{
         "context": {},
         "url": "../test-client.html"
     }});
+
+logger.silent = true;
+
 logger.log({level:'info', message:'info'});
+logger.silent = false;
 logger.log({level:'error', message:'critical'});
