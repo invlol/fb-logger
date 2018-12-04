@@ -8,7 +8,7 @@ let conf = {
 
 let logger = new fbLogger
   .Logger()
-  .setLogger();
+  .getLogger();
 
 logger.log({level:'info', message:'info', stack:{
         "args": [],
