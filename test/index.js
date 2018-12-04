@@ -3,10 +3,12 @@ const fbLogger = require('./../index');
 let conf = {
     "NODE_ENV": "DEV",
     "NODE_LOG_LEVEL": "info",
-    "NODE_LOG_FORMAT": "CUSTOM",
+    "NODE_LOG_FORMAT": "JSON",
 };
 
-let logger = new fbLogger.logger(conf).log();
+let logger = new fbLogger
+  .logger(conf)
+  .setLogger();
 
 logger.log({level:'info', message:'info', stack:{
         "args": [],
