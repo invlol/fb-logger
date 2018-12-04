@@ -1,4 +1,4 @@
 module.exports = {
-    logger: require('./lib/logger'),
-    config: require('./lib/config/secrets'),
+    Logger: require('./lib/logger'),
+    Config: require('./lib/config/secrets'),
 };
